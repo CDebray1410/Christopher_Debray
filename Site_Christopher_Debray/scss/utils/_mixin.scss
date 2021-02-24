@@ -1,0 +1,32 @@
+@mixin breakpoint($device){
+  @media screen and (max-width: $device){
+      @content;
+  }
+}
+
+@mixin background-color($palettes){
+  @each $key,$value in $palettes{
+    &--#{$key}{
+      background-color: $value;
+    }
+  }
+}
+
+@mixin animation($animation-name, $animation-duration){
+  animation-name: $animation-name;
+  animation-duration: $animation-duration;
+}
+
+@mixin after-element($background-color, $animation-name ,$transform-origin, $duration){
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform-origin: $transform-origin;
+  background-color: $background-color;
+  animation-name: $animation-name;
+  animation-duration: $duration;
+}

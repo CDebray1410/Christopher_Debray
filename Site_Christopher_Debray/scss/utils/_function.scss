@@ -1,0 +1,3 @@
+@function color_darken($color-primary, $color-secondary){
+  @return saturate($color-primary, 30%), saturate($color-secondary, 30%);
+}

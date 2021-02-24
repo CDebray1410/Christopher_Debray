@@ -1,0 +1,64 @@
+.header{
+  height: 180px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  @include breakpoint(map-get($breakpoint, mobile)){
+    height: auto;
+  }
+  &--main{
+    background: url('../images/fond_jaune.png');
+  }
+  &--starbound{
+    background-image: repeating-linear-gradient(to bottom, color_darken(map-get($color-secondary-palettes, starbound-color-secondary), map-get($color-primary-palettes, starbound-color-primary)));
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__image{
+      max-width: 95%;
+      margin: auto;
+    }
+  }
+  &--books{
+    background: linear-gradient(to top left, map-get($color-secondary-palettes, books), map-get($color-primary-palettes, books) 70%);
+  }
+  &--code{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    font-family: "Arial Black", Gadget, sans-serif;
+
+    @include breakpoint(map-get($breakpoint, mobile)){
+      flex-direction: column;
+      text-align: center;
+    }
+    &__link-w3c{
+      text-decoration: none;
+      margin: 5px 10px;
+      letter-spacing: 3px;
+      color: $text-color-w3c;
+    }
+    &__w3c-com{
+      color: map-get($color-secondary-palettes, code);
+    }
+    &__link-openclassrooms{
+      margin: 5px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: map-get($color-primary-palettes, code );
+    }
+    &__link-html-net{
+      margin: 0px 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+    &__link-html-dot{
+      color: orange;
+    }
+  }
+}

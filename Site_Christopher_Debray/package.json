@@ -1,0 +1,13 @@
+{
+  "name": "site_web_academie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss:./css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./prefixed_css/"
+  },
+  "browserslist": "last 4 versions",
+  "author": "Christopher Debray",
+  "license": "ISC"
+}

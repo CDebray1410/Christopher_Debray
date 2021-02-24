@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+.body{
+  margin: 0px;
+  font-size: 1.5rem;
+  &--index{
+    background-image: url('../images/fond_jaune.png');
+    color: #1B2F8A;
+  }
+  &--starbound{
+    background-image: url('../images/stars2.jpg');
+    color: white;
+  }
+  &--books{
+    background: linear-gradient(to left, map-get($color-secondary-palettes, books), map-get($color-primary-palettes, books) );
+    color: white;
+  }
+  &--code{
+    overflow-x: hidden;
+  }
+  &--fake_intro{
+    background: linear-gradient(to right, red, yellow);
+    color: white;
+  }
+}
+main{
+  max-width: 100%;
+}

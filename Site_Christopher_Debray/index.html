@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Christopher Debray">
+    <meta name="description" content="Site évoquant certaines de mes passions">
+    <meta name="keywords" content="Starbound, html, css, livres, jeux vidéos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="prefixed_css/main.css">
+  </head>
+
+  <body class="body body--index">
+    <header class="header header__main">
+      <h1>Christopher Debray</h1>
+    </header>
+
+    <nav class="topnav topnav--main">
+      <a href="index.html" class="topnav__link"><img src="images/homewhite.ico" alt="icône de maison" /></a>
+      <a href="starbound.html" class="topnav__link">Starbound</a>
+      <a href="books.html" class="topnav__link">Livres</a>
+      <div class="topnav__dropdown topnav__dropdown--background-inherit">
+        <button class="topnav__dropbtn">Programmation</button>
+        <div class="topnav__dropdown__content">
+          <a href="code.html#html">Html.net</a>
+          <a href="code.html#w3cschools">W3cschools</a>
+          <a href="code.html#openclassrooms">Open Classrooms</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="index-container">
+      <header class="index-container__header">
+        <h1>Mes passions</h1>
+      </header>
+      
+      <section class="index-container__introduction">
+        <article class="index-container__introduction__box">
+          <h2 class="centered-text font-commando">Starbound</h2>
+          <p>
+            Starbound est un jeu "bac à sable" auquel se mêlent des éléments d'exploration et d'action, le tout dans un univers de science-fiction. 
+            Vous aurez le choix entre 7 races pour sauver l'univers !
+          </p>
+          <a href="starbound.html" class="button button--starbound"></a>
+        </article>
+
+        <article class="index-container__introduction__box">
+          <h2 class="centered-text font-dobkinplain">Livres</h2>
+          <p>
+            Voici une liste de quelques livres que j'apprécie particulièrement, chacuns d'entre eux se déroulant dans un monde avec sa propre culture et 
+            ambiance, le tout dans son propre univers.
+          </p>
+          <a href="books.html" class="button button--books"></a>
+        </article>
+
+        <article class="index-container__introduction__box"> 
+          <h2 class="centered-text">Programmation</h2>
+          <p>
+            Une petite introduction sur les principaux sites que j'ai utilisé dans le but de parfaire mes connaissances liées au monde de la programmation
+            ainsi que de l'informatique en général.
+          </p>
+          <a href="code.html" class="button button--coding"></a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer--main">
+      <address>
+        <a href="">Mon_mail@truc.fr</a>
+        <p>téléphone : 70 42 54 42 29</p>
+      </address>
+    </footer>
+  </body>
+</html>

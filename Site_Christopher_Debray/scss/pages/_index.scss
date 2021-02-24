@@ -1,0 +1,34 @@
+.index-container{
+  width: 80%;
+  margin: 20px auto;
+
+  @include breakpoint(map-get($breakpoint, mobile)){
+    width: 100%;
+    margin: 0px;
+  }
+  &__header{
+    text-align: center;
+    background: url('../images/separateur.png') bottom repeat-x;
+    /* Séparateur / bordure personalisée */
+    padding: 10px;
+    @include animation(fade-in, 1.5s);
+  }
+  &__introduction{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    @include animation(fade-in, 1.5s);
+    &__box{
+      width: 455px;
+      margin: 15px auto;
+
+      @include breakpoint(map-get($breakpoint, mobile)){
+        width: 98%;
+      }
+      &:last-child{
+        border: none;
+      }
+    }
+
+  }
+}

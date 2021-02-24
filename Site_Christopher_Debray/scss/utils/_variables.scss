@@ -1,0 +1,21 @@
+$text-color-w3c: #555555;
+$color-secondary-palettes: (
+  main: hsl(0, 78%, 29%),
+  starbound-color-secondary: hsla(207, 62%, 35%, 0.60),
+  books: hsl(22, 67%, 57%),
+  code: hsl(122, 39%, 49%)
+);
+$color-primary-palettes: (
+  starbound-color-primary: hsla(240, 100%, 10%, 0.60),
+  books: rgba(189, 4, 4, 0.87),
+  code: hsl(261, 89%, 58%)
+);
+$footer-color: (
+  main-starbound: hsl(106, 41%, 53%),
+  books-code: hsl(204, 76%, 50%)
+);
+$breakpoint: (
+  smallcomputer: 1200px,
+  tablet: 800px,
+  mobile: 600px
+);

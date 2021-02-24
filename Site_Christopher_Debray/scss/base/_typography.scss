@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'dobkinplain';
+  src: url('DobkinPlain-webfont.eot');
+  src: url('DobkinPlain-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/dobkin_plain_macroman/DobkinPlain-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face{
+  font-family: 'commandocommando';
+    src: url('commando-webfont.eot');
+    src: url('commando-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/commando_regular_macroman/commando-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'membraregular';
+  src: url('membra-webfont.eot');
+  src: url('membra-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/membra_regular_macroman/membra-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.font-dobkinplain{
+  font-family: 'dobkinplain', serif;
+  letter-spacing: 5px;
+}
+.font-commando{
+  font-family: 'commandocommando', serif;
+}
+.font-membra{
+  font-family: 'membraregular', serif;
+  letter-spacing: 0px;
+}
+
+.centered-text{
+  text-align: center;
+}

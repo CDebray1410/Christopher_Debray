@@ -1,0 +1,32 @@
+.button{
+  display: block;
+  height: 80px;
+  width: 220px;
+  margin: 40px auto 10px auto;
+  position: relative;
+  text-decoration: none;
+  border-radius: 10%;
+  border: double lightgray 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 10px 6px 0px hsla(0, 1%, 34%, 0.534);
+  /* Permet de donner un effet semblable au fait d'appuyer sur un bouton lorsque l'on clique dessus (:active) */
+  &:active{
+    left: 5px;
+    top: 3px;
+    box-shadow: 5px 3px 0px hsla(0, 1%, 34%, 0.534);
+  }
+  &--coding{
+    background-image: url('../images/clavier.png');
+    background-color: black;
+  }
+  &--books{
+    background-image: url('../images/books.jpg');
+    background-color: lightgrey;
+  }
+  &--starbound{
+    background-image: url('../images/starbound_logo.png');
+    background-color: hsla(240, 73%, 19%, 0.897);
+  }
+}

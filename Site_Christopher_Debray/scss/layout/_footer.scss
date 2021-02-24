@@ -1,0 +1,26 @@
+footer{
+  margin: 80px auto 10px auto;
+  padding: 3px;
+  width: 80%;
+  background-color: hsla(0, 0%, 68%, 0.158);
+  address{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: map-get($footer-color, main-starbound);
+    a{
+      margin: 0px 5px;
+      color: map-get($footer-color, main-starbound);
+    }
+  }
+}
+.address--books-code{
+  color: map-get($footer-color, books-code);
+}
+.a--books-code{
+  color: map-get($footer-color, books-code);
+}
+.footer--main{
+  @include animation(fade-in, 1.5s);
+}

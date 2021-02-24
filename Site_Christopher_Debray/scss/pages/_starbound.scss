@@ -1,0 +1,47 @@
+.starbound-race{
+  display: flex;
+  @include breakpoint(map-get($breakpoint, tablet)){
+    flex-wrap: wrap;
+  }
+  height: auto;
+  position: relative;
+  width: 92%;
+  margin: 30px 4%;
+  background-color: map-get($color-primary-palettes ,starbound-color-primary);
+  border-style: double outset;
+  border-width: 1px;
+  border-color: white;
+  @include animation(slide-up-bounce, 1s);
+  animation-timing-function: cubic-bezier(.76,1.24,.94,.96);
+  &__title{
+    text-decoration: underline;
+    font-family: commandocommando;
+    color: hsl(210, 100%, 66%);
+  }
+  picture{ 
+    @include breakpoint(map-get($breakpoint, tablet)){
+      margin: 15px auto;
+    }
+  }
+  &__image{
+    height: 240px;
+    width: 240px;
+    margin: 15px 25px;
+    border: 3px solid white;
+    &--color-primary{
+      background-color: map-get($color-primary-palettes, starbound-color-primary);
+    }
+    &--color-secondary{
+      background-color: map-get($color-secondary-palettes, starbound-color-secondary);
+    }
+  }
+  &__text{
+    margin: 5px 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  &--reverse{
+    background-color: map-get($color-secondary-palettes, starbound-color-secondary);
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
